@@ -25,12 +25,10 @@ Correo: [diegomaneyro@gmail.com](mailto:diegomaneyro@gmail.com)
 
 Pruebe mi aplicación [aquí](http://www.render.com "Despliegue de app")
 
----
+## Documentación
+[GitHubPage](https://diegomaneyro.github.io/My_Blog/)
 
 ## Estructura del proyecto
 
-<Incluye aquí una breve descripción de la estructura del proyecto, para que otros desarrolladores puedan entender la organización de tu código.>
-
-## Licencia
 
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
