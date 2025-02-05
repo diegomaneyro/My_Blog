@@ -8,7 +8,7 @@ User = get_user_model()
 # Categorias
 class Category(models.Model):
     name = models.CharField(max_length=20)  # Cambié False a 20
-    image = models.ImageField(blank=False, null=False)
+    image = models.ImageField(upload_to=('Categories'), blank=False, null=False)
     slug = models.SlugField(unique=True, max_length=40)  # URL amigable
     featured = models.BooleanField(default=False)  # Al crear una categoria por defecto no es destacada
     created = models.DateTimeField(auto_now_add=True)  # Conocer la fecha en que se registró la categoria
@@ -28,7 +28,7 @@ class Article(models.Model):
     title = models.CharField(max_length=255)
     introduction = models.CharField(max_length=255)
     slug = models.SlugField(unique=True, max_length=255)
-    image = models.ImageField()
+    image = models.ImageField(upload_to='Articles', blank=False, null=False)
     body = models.TextField()
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
     categories = models.ManyToManyField(Category)
