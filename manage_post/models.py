@@ -7,7 +7,7 @@ User = get_user_model()
 
 # Categorias
 class Category(models.Model):
-    name = models.CharField(max_length=255)  # Cambié False a 255
+    name = models.CharField(max_length=20)  # Cambié False a 20
     image = models.ImageField(blank=False, null=False)
     slug = models.SlugField(unique=True, max_length=40)  # URL amigable
     featured = models.BooleanField(default=False)  # Al crear una categoria por defecto no es destacada
@@ -30,7 +30,7 @@ class Article(models.Model):
     slug = models.SlugField(unique=True, max_length=255)
     image = models.ImageField()
     body = models.TextField()
-    user = models.ForeignKey(User, on_delete=models.CASCADE)  # Cambié user_id a user
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
     categories = models.ManyToManyField(Category)
     created = models.DateTimeField(auto_now_add=True)  # Conocer la fecha en que se registró el artículo
     updated = models.DateTimeField(auto_now=True)  # Conocer la fecha de actualización de un artículo
@@ -47,13 +47,13 @@ class Article(models.Model):
 class Rating(models.Model):
     value = models.FloatField()  # Asignar una calificación
     description = models.CharField(max_length=255)
-    article = models.ForeignKey(Article, on_delete=models.CASCADE)  # Cambié article_id a article
-    user = models.ForeignKey(User, on_delete=models.CASCADE)  # Cambié user_id a user
+    article_id = models.ForeignKey(Article, on_delete=models.CASCADE) 
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE) 
     created = models.DateTimeField(auto_now_add=True)  # Conocer la fecha en que se registró la calificación
     status = models.BooleanField(default=True)  # Al registrarla estar activa
 
     def __str__(self):
-        return self.user.username
+        return self.user_id.username
 
     class Meta:
         verbose_name = 'Rating'
