@@ -13,6 +13,8 @@
 
 .login #header h1 {
     font-size: 18px;
+    font-size: 1.125rem;
+    margin: 0;
 }
 
 .login #header h1 a {
@@ -20,7 +22,11 @@
 }
 
 .login #content {
+<<<<<<< HEAD
     padding: 20px 20px 0;
+=======
+    padding: 20px;
+>>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 }
 
 .login #container {

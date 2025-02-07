@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*global gettext, interpolate, ngettext*/
+=======
+/*global gettext, interpolate, ngettext, Actions*/
+>>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 'use strict';
 {
     function show(selector) {
@@ -36,7 +40,14 @@
 
     function clearAcross(options) {
         reset(options);
+<<<<<<< HEAD
         document.querySelector(options.acrossInput).value = 0;
+=======
+        const acrossInputs = document.querySelectorAll(options.acrossInput);
+        acrossInputs.forEach(function(acrossInput) {
+            acrossInput.value = 0;
+        });
+>>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
         document.querySelector(options.actionContainer).classList.remove(options.selectedClass);
     }
 
@@ -107,8 +118,15 @@
         document.querySelectorAll(options.acrossQuestions + " a").forEach(function(el) {
             el.addEventListener('click', function(event) {
                 event.preventDefault();
+<<<<<<< HEAD
                 const acrossInput = document.querySelector(options.acrossInput);
                 acrossInput.value = 1;
+=======
+                const acrossInputs = document.querySelectorAll(options.acrossInput);
+                acrossInputs.forEach(function(acrossInput) {
+                    acrossInput.value = 1;
+                });
+>>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
                 showClear(options);
             });
         });
@@ -151,7 +169,11 @@
             });
         });
 
+<<<<<<< HEAD
         document.querySelector('#changelist-form button[name=index]').addEventListener('click', function() {
+=======
+        document.querySelector('#changelist-form button[name=index]').addEventListener('click', function(event) {
+>>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
             if (list_editable_changed) {
                 const confirmed = confirm(gettext("You have unsaved changes on individual editable fields. If you run an action, your unsaved changes will be lost."));
                 if (!confirmed) {
@@ -174,6 +196,12 @@
                 }
             });
         }
+<<<<<<< HEAD
+=======
+        // Sync counter when navigating to the page, such as through the back
+        // button.
+        window.addEventListener('pageshow', (event) => updateCounter(actionCheckboxes, options));
+>>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     };
 
     // Call function fn when the DOM is loaded and ready. If it is already

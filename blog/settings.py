@@ -114,6 +114,21 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATICFILES_DIR = [
+    'Apps/manage_post/static',
+    'Apps/user/static',
+]
+
+# Ubicacaion de los archivos estaticos
+STATIC_ROOT = BASE_DIR / 'static'
+
+# url publica para los archivos media
+MEDIA_URL = "/media/"
+
+# ubicacaio de los archivos media
+MEDIA_ROOT = BASE_DIR / 'media'
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
