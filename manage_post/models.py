@@ -1,10 +1,11 @@
 from django.db import models
 from django.contrib.auth import get_user_model
-User = get_user_model()
 from ckeditor.fields import RichTextField
 from cloudinary.models import CloudinaryField
 
+
 # Create your models here.
+User = get_user_model()
 
 #Categoría
 class Category(models.Model):
@@ -31,11 +32,12 @@ class Article(models.Model):
     image = CloudinaryField('image')
     body = RichTextField()
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    # relacion muchos a muchos ManyToManyFields
     categories = models.ManyToManyField(Category)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     status = models.BooleanField(default=True)
-
+    
     def __str__(self):
         return self.title
 

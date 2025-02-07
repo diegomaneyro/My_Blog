@@ -78,6 +78,7 @@ DATABASES = {
     }
 }
 
+# Modelo user por dfecto que usara la app para usuario
 AUTH_USER_MODEL = 'user.User'
 
 # Password validation

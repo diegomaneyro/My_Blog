@@ -12,6 +12,7 @@ class User(AbstractUser):
     full_name = models.CharField(max_length=255)
 
 class Profile(models.Model):
+    # OneToOneFields crea una relacio 1 a 1 entre dos modelos Profile.user y User.user(un usuario solo puede tener un perfil) 
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
     photo = CloudinaryField('image')
 
