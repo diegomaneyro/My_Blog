@@ -1,6 +1,6 @@
 # My Blog
 <p align="center">
-    <img src="static/logo-blog.png" alt="logo" width="200">
+    <img src="docs/logo/logo-blog.png" alt="logo" width="200">
 </p>
 
 **Blog Personal Desarrollado en Python-Django**
@@ -21,12 +21,10 @@ Correo: [diegomaneyro@gmail.com](mailto:diegomaneyro@gmail.com)
 [![Portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://sites.google.com/view/diegodev/acerca-de-m%C3%AD)  
 [![LinkedIn](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/diego-maneyro)
 
-## Despliegue
-
-Pruebe mi aplicación [aquí](http://www.render.com "Despliegue de app")
 
 ## Documentación
-[GitHubPage](https://diegomaneyro.github.io/My_Blog/)
+En este link encontrara la documentación del proyecto
+[GitHub-Page](https://diegomaneyro.github.io/My_Blog/)
 
 ## Estructura del proyecto
 
