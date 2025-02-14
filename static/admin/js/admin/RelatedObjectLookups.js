@@ -4,11 +4,6 @@
 'use strict';
 {
     const $ = django.jQuery;
-<<<<<<< HEAD
-
-    function showAdminPopup(triggeringLink, name_regexp, add_popup) {
-        const name = triggeringLink.id.replace(name_regexp, '');
-=======
     let popupIndex = 0;
     const relatedWindows = [];
 
@@ -40,16 +35,12 @@
 
     function showAdminPopup(triggeringLink, name_regexp, add_popup) {
         const name = addPopupIndex(triggeringLink.id.replace(name_regexp, ''));
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
         const href = new URL(triggeringLink.href);
         if (add_popup) {
             href.searchParams.set('_popup', 1);
         }
         const win = window.open(href, name, 'height=500,width=800,resizable=yes,scrollbars=yes');
-<<<<<<< HEAD
-=======
         relatedWindows.push(win);
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
         win.focus();
         return false;
     }
@@ -59,24 +50,17 @@
     }
 
     function dismissRelatedLookupPopup(win, chosenId) {
-<<<<<<< HEAD
-        const name = win.name;
-=======
         const name = removePopupIndex(win.name);
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
         const elem = document.getElementById(name);
         if (elem.classList.contains('vManyToManyRawIdAdminField') && elem.value) {
             elem.value += ',' + chosenId;
         } else {
             document.getElementById(name).value = chosenId;
         }
-<<<<<<< HEAD
-=======
         const index = relatedWindows.indexOf(win);
         if (index > -1) {
             relatedWindows.splice(index, 1);
         }
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
         win.close();
     }
 
@@ -95,16 +79,6 @@
             siblings.each(function() {
                 const elm = $(this);
                 elm.attr('href', elm.attr('data-href-template').replace('__fk__', value));
-<<<<<<< HEAD
-            });
-        } else {
-            siblings.removeAttr('href');
-        }
-    }
-
-    function dismissAddRelatedObjectPopup(win, newId, newRepr) {
-        const name = win.name;
-=======
                 elm.removeAttr('aria-disabled');
             });
         } else {
@@ -145,16 +119,12 @@
 
     function dismissAddRelatedObjectPopup(win, newId, newRepr) {
         const name = removePopupIndex(win.name);
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
         const elem = document.getElementById(name);
         if (elem) {
             const elemName = elem.nodeName.toUpperCase();
             if (elemName === 'SELECT') {
                 elem.options[elem.options.length] = new Option(newRepr, newId, true, true);
-<<<<<<< HEAD
-=======
                 updateRelatedSelectsOptions(elem, win, null, newRepr, newId);
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
             } else if (elemName === 'INPUT') {
                 if (elem.classList.contains('vManyToManyRawIdAdminField') && elem.value) {
                     elem.value += ',' + newId;
@@ -170,22 +140,15 @@
             SelectBox.add_to_cache(toId, o);
             SelectBox.redisplay(toId);
         }
-<<<<<<< HEAD
-=======
         const index = relatedWindows.indexOf(win);
         if (index > -1) {
             relatedWindows.splice(index, 1);
         }
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
         win.close();
     }
 
     function dismissChangeRelatedObjectPopup(win, objId, newRepr, newId) {
-<<<<<<< HEAD
-        const id = win.name.replace(/^edit_/, '');
-=======
         const id = removePopupIndex(win.name.replace(/^edit_/, ''));
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
         const selectsSelector = interpolate('#%s, #%s_from, #%s_to', [id, id, id]);
         const selects = $(selectsSelector);
         selects.find('option').each(function() {
@@ -193,34 +156,23 @@
                 this.textContent = newRepr;
                 this.value = newId;
             }
-<<<<<<< HEAD
-        });
-=======
         }).trigger('change');
         updateRelatedSelectsOptions(selects[0], win, objId, newRepr, newId);
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
         selects.next().find('.select2-selection__rendered').each(function() {
             // The element can have a clear button as a child.
             // Use the lastChild to modify only the displayed value.
             this.lastChild.textContent = newRepr;
             this.title = newRepr;
         });
-<<<<<<< HEAD
-=======
         const index = relatedWindows.indexOf(win);
         if (index > -1) {
             relatedWindows.splice(index, 1);
         }
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
         win.close();
     }
 
     function dismissDeleteRelatedObjectPopup(win, objId) {
-<<<<<<< HEAD
-        const id = win.name.replace(/^delete_/, '');
-=======
         const id = removePopupIndex(win.name.replace(/^delete_/, ''));
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
         const selectsSelector = interpolate('#%s, #%s_from, #%s_to', [id, id, id]);
         const selects = $(selectsSelector);
         selects.find('option').each(function() {
@@ -228,13 +180,10 @@
                 $(this).remove();
             }
         }).trigger('change');
-<<<<<<< HEAD
-=======
         const index = relatedWindows.indexOf(win);
         if (index > -1) {
             relatedWindows.splice(index, 1);
         }
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
         win.close();
     }
 
@@ -245,34 +194,23 @@
     window.dismissAddRelatedObjectPopup = dismissAddRelatedObjectPopup;
     window.dismissChangeRelatedObjectPopup = dismissChangeRelatedObjectPopup;
     window.dismissDeleteRelatedObjectPopup = dismissDeleteRelatedObjectPopup;
-<<<<<<< HEAD
-=======
     window.dismissChildPopups = dismissChildPopups;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 
     // Kept for backward compatibility
     window.showAddAnotherPopup = showRelatedObjectPopup;
     window.dismissAddAnotherPopup = dismissAddRelatedObjectPopup;
 
-<<<<<<< HEAD
-    $(document).ready(function() {
-=======
     window.addEventListener('unload', function(evt) {
         window.dismissChildPopups();
     });
 
     $(document).ready(function() {
         setPopupIndex();
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
         $("a[data-popup-opener]").on('click', function(event) {
             event.preventDefault();
             opener.dismissRelatedLookupPopup(window, $(this).data("popup-opener"));
         });
-<<<<<<< HEAD
-        $('body').on('click', '.related-widget-wrapper-link', function(e) {
-=======
         $('body').on('click', '.related-widget-wrapper-link[data-popup="yes"]', function(e) {
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
             e.preventDefault();
             if (this.href) {
                 const event = $.Event('django:show-related', {href: this.href});

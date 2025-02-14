@@ -2,51 +2,18 @@
 {
     const toggleNavSidebar = document.getElementById('toggle-nav-sidebar');
     if (toggleNavSidebar !== null) {
-<<<<<<< HEAD
-        const navLinks = document.querySelectorAll('#nav-sidebar a');
-        function disableNavLinkTabbing() {
-            for (const navLink of navLinks) {
-                navLink.tabIndex = -1;
-            }
-        }
-        function enableNavLinkTabbing() {
-            for (const navLink of navLinks) {
-                navLink.tabIndex = 0;
-            }
-        }
-
-=======
         const navSidebar = document.getElementById('nav-sidebar');
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
         const main = document.getElementById('main');
         let navSidebarIsOpen = localStorage.getItem('django.admin.navSidebarIsOpen');
         if (navSidebarIsOpen === null) {
             navSidebarIsOpen = 'true';
         }
-<<<<<<< HEAD
-        if (navSidebarIsOpen === 'false') {
-            disableNavLinkTabbing();
-        }
-        main.classList.toggle('shifted', navSidebarIsOpen === 'true');
-=======
         main.classList.toggle('shifted', navSidebarIsOpen === 'true');
         navSidebar.setAttribute('aria-expanded', navSidebarIsOpen);
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 
         toggleNavSidebar.addEventListener('click', function() {
             if (navSidebarIsOpen === 'true') {
                 navSidebarIsOpen = 'false';
-<<<<<<< HEAD
-                disableNavLinkTabbing();
-            } else {
-                navSidebarIsOpen = 'true';
-                enableNavLinkTabbing();
-            }
-            localStorage.setItem('django.admin.navSidebarIsOpen', navSidebarIsOpen);
-            main.classList.toggle('shifted');
-        });
-    }
-=======
             } else {
                 navSidebarIsOpen = 'true';
             }
@@ -109,5 +76,4 @@
     }
     window.initSidebarQuickFilter = initSidebarQuickFilter;
     initSidebarQuickFilter();
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 }

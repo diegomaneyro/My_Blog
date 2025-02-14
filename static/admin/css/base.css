@@ -2,95 +2,6 @@
     DJANGO Admin styles
 */
 
-<<<<<<< HEAD
-@import url(fonts.css);
-
-/* VARIABLE DEFINITIONS */
-:root {
-  --primary: #79aec8;
-  --secondary: #417690;
-  --accent: #f5dd5d;
-  --primary-fg: #fff;
-
-  --body-fg: #333;
-  --body-bg: #fff;
-  --body-quiet-color: #666;
-  --body-loud-color: #000;
-
-  --header-color: #ffc;
-  --header-branding-color: var(--accent);
-  --header-bg: var(--secondary);
-  --header-link-color: var(--primary-fg);
-
-  --breadcrumbs-fg: #c4dce8;
-  --breadcrumbs-link-fg: var(--body-bg);
-  --breadcrumbs-bg: var(--primary);
-
-  --link-fg: #447e9b;
-  --link-hover-color: #036;
-  --link-selected-fg: #5b80b2;
-
-  --hairline-color: #e8e8e8;
-  --border-color: #ccc;
-
-  --error-fg: #ba2121;
-
-  --message-success-bg: #dfd;
-  --message-warning-bg: #ffc;
-  --message-error-bg: #ffefef;
-
-  --darkened-bg: #f8f8f8; /* A bit darker than --body-bg */
-  --selected-bg: #e4e4e4; /* E.g. selected table cells */
-  --selected-row: #ffc;
-
-  --button-fg: #fff;
-  --button-bg: var(--primary);
-  --button-hover-bg: #609ab6;
-  --default-button-bg: var(--secondary);
-  --default-button-hover-bg: #205067;
-  --close-button-bg: #888; /* Previously #bbb, contrast 1.92 */
-  --close-button-hover-bg: #747474;
-  --delete-button-bg: #ba2121;
-  --delete-button-hover-bg: #a41515;
-
-  --object-tools-fg: var(--button-fg);
-  --object-tools-bg: var(--close-button-bg);
-  --object-tools-hover-bg: var(--close-button-hover-bg);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary: #264b5d;
-    --primary-fg: #eee;
-
-    --body-fg: #eeeeee;
-    --body-bg: #121212;
-    --body-quiet-color: #e0e0e0;
-    --body-loud-color: #ffffff;
-
-    --breadcrumbs-link-fg: #e0e0e0;
-    --breadcrumbs-bg: var(--primary);
-
-    --link-fg: #81d4fa;
-    --link-hover-color: #4ac1f7;
-    --link-selected-fg: #6f94c6;
-
-    --hairline-color: #272727;
-    --border-color: #353535;
-
-    --error-fg: #e35f5f;
-    --message-success-bg: #006b1b;
-    --message-warning-bg: #583305;
-    --message-error-bg: #570808;
-
-    --darkened-bg: #212121;
-    --selected-bg: #1b1b1b;
-    --selected-row: #00363a;
-
-    --close-button-bg: #333333;
-    --close-button-hover-bg: #666666;
-  }
-=======
 /* VARIABLE DEFINITIONS */
 html[data-theme="light"],
 :root {
@@ -176,7 +87,6 @@ html[data-theme="light"],
         "Noto Color Emoji";
 
     color-scheme: light;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 }
 
 html, body {
@@ -186,13 +96,8 @@ html, body {
 body {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-    font-size: 14px;
-    font-family: "Roboto","Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
-=======
     font-size: 0.875rem;
     font-family: var(--font-family-primary);
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     color: var(--body-fg);
     background: var(--body-bg);
 }
@@ -244,20 +149,11 @@ h1,h2,h3,h4,h5 {
 h1 {
     margin: 0 0 20px;
     font-weight: 300;
-<<<<<<< HEAD
-    font-size: 20px;
-    color: var(--body-quiet-color);
-}
-
-h2 {
-    font-size: 16px;
-=======
     font-size: 1.25rem;
 }
 
 h2 {
     font-size: 1rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     margin: 1em 0 .5em 0;
 }
 
@@ -267,28 +163,13 @@ h2.subhead {
 }
 
 h3 {
-<<<<<<< HEAD
-    font-size: 14px;
-    margin: .8em 0 .3em 0;
-    color: var(--body-quiet-color);
-=======
     font-size: 0.875rem;
     margin: .8em 0 .3em 0;
     color: var(--body-medium-color);
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     font-weight: bold;
 }
 
 h4 {
-<<<<<<< HEAD
-    font-size: 12px;
-    margin: 1em 0 .8em 0;
-    padding-bottom: 3px;
-}
-
-h5 {
-    font-size: 10px;
-=======
     font-size: 0.75rem;
     margin: 1em 0 .8em 0;
     padding-bottom: 3px;
@@ -297,7 +178,6 @@ h5 {
 
 h5 {
     font-size: 0.625rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     margin: 1.5em 0 .5em 0;
     color: var(--body-quiet-color);
     text-transform: uppercase;
@@ -314,13 +194,8 @@ li ul {
 }
 
 li, dt, dd {
-<<<<<<< HEAD
-    font-size: 13px;
-    line-height: 20px;
-=======
     font-size: 0.8125rem;
     line-height: 1.25rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 }
 
 dt {
@@ -345,17 +220,12 @@ fieldset {
     border-top: 1px solid var(--hairline-color);
 }
 
-<<<<<<< HEAD
-blockquote {
-    font-size: 11px;
-=======
 details summary {
     cursor: pointer;
 }
 
 blockquote {
     font-size: 0.6875rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     color: #777;
     margin-left: 2px;
     padding-left: 10px;
@@ -363,15 +233,9 @@ blockquote {
 }
 
 code, pre {
-<<<<<<< HEAD
-    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
-    color: var(--body-quiet-color);
-    font-size: 12px;
-=======
     font-family: var(--font-family-monospace);
     color: var(--body-quiet-color);
     font-size: 0.75rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     overflow-x: auto;
 }
 
@@ -393,27 +257,12 @@ hr {
     border: none;
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-    font-size: 1px;
-=======
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     line-height: 1px;
 }
 
 /* TEXT STYLES & MODIFIERS */
 
 .small {
-<<<<<<< HEAD
-    font-size: 11px;
-}
-
-.mini {
-    font-size: 10px;
-}
-
-.help, p.help, form p.help, div.help, form div.help, div.help li {
-    font-size: 11px;
-=======
     font-size: 0.6875rem;
 }
 
@@ -423,7 +272,6 @@ hr {
 
 .help, p.help, form p.help, div.help, form div.help, div.help li {
     font-size: 0.6875rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     color: var(--body-quiet-color);
 }
 
@@ -453,11 +301,7 @@ p img, h1 img, h2 img, h3 img, h4 img, td img {
 }
 
 .hidden {
-<<<<<<< HEAD
-    display: none;
-=======
     display: none !important;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 }
 
 /* TABLES */
@@ -468,24 +312,15 @@ table {
 }
 
 td, th {
-<<<<<<< HEAD
-    font-size: 13px;
-    line-height: 16px;
-=======
     font-size: 0.8125rem;
     line-height: 1rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     border-bottom: 1px solid var(--hairline-color);
     vertical-align: top;
     padding: 8px;
 }
 
 th {
-<<<<<<< HEAD
-    font-weight: 600;
-=======
     font-weight: 500;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     text-align: left;
 }
 
@@ -493,11 +328,7 @@ thead th,
 tfoot td {
     color: var(--body-quiet-color);
     padding: 5px 10px;
-<<<<<<< HEAD
-    font-size: 11px;
-=======
     font-size: 0.6875rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     background: var(--body-bg);
     border: none;
     border-top: 1px solid var(--hairline-color);
@@ -510,11 +341,7 @@ tfoot td {
 }
 
 thead th.required {
-<<<<<<< HEAD
-    color: var(--body-loud-color);
-=======
     font-weight: bold;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 }
 
 tr.alt {
@@ -611,11 +438,7 @@ table thead th.sorted .sortoptions a.sortremove:after {
     top: -6px;
     left: 3px;
     font-weight: 200;
-<<<<<<< HEAD
-    font-size: 18px;
-=======
     font-size: 1.125rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     color: var(--body-quiet-color);
 }
 
@@ -654,15 +477,9 @@ input, textarea, select, .form-row p, form .button {
     margin: 2px 0;
     padding: 2px 3px;
     vertical-align: middle;
-<<<<<<< HEAD
-    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
-    font-weight: normal;
-    font-size: 13px;
-=======
     font-family: var(--font-family-primary);
     font-weight: normal;
     font-size: 0.8125rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 }
 .form-row div.help {
     padding: 2px 3px;
@@ -672,10 +489,6 @@ textarea {
     vertical-align: top;
 }
 
-<<<<<<< HEAD
-input[type=text], input[type=password], input[type=email], input[type=url],
-input[type=number], input[type=tel], textarea, select, .vTextField {
-=======
 /*
 Minifiers remove the default (text) "type" attribute from "input" HTML tags.
 Add input:not([type]) to make the CSS stylesheet work the same.
@@ -683,7 +496,6 @@ Add input:not([type]) to make the CSS stylesheet work the same.
 input:not([type]), input[type=text], input[type=password], input[type=email],
 input[type=url], input[type=number], input[type=tel], textarea, select,
 .vTextField {
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     border: 1px solid var(--border-color);
     border-radius: 4px;
     padding: 5px 6px;
@@ -692,11 +504,6 @@ input[type=url], input[type=number], input[type=tel], textarea, select,
     background-color: var(--body-bg);
 }
 
-<<<<<<< HEAD
-input[type=text]:focus, input[type=password]:focus, input[type=email]:focus,
-input[type=url]:focus, input[type=number]:focus, input[type=tel]:focus,
-textarea:focus, select:focus, .vTextField:focus {
-=======
 /*
 Minifiers remove the default (text) "type" attribute from "input" HTML tags.
 Add input:not([type]) to make the CSS stylesheet work the same.
@@ -704,16 +511,11 @@ Add input:not([type]) to make the CSS stylesheet work the same.
 input:not([type]):focus, input[type=text]:focus, input[type=password]:focus,
 input[type=email]:focus, input[type=url]:focus, input[type=number]:focus,
 input[type=tel]:focus, textarea:focus, select:focus, .vTextField:focus {
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     border-color: var(--body-quiet-color);
 }
 
 select {
-<<<<<<< HEAD
-    height: 30px;
-=======
     height: 1.875rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 }
 
 select[multiple] {
@@ -749,10 +551,6 @@ a.button {
 }
 
 .button.default, input[type=submit].default, .submit-row input.default {
-<<<<<<< HEAD
-    float: right;
-=======
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     border: none;
     font-weight: 400;
     background: var(--default-button-bg);
@@ -800,25 +598,15 @@ input[type=button][disabled].default {
     margin: 0;
     padding: 8px;
     font-weight: 400;
-<<<<<<< HEAD
-    font-size: 13px;
-    text-align: left;
-    background: var(--primary);
-=======
     font-size: 0.8125rem;
     text-align: left;
     background: var(--header-bg);
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     color: var(--header-link-color);
 }
 
 .module caption,
 .inline-group h2 {
-<<<<<<< HEAD
-    font-size: 12px;
-=======
     font-size: 0.75rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
@@ -837,20 +625,13 @@ ul.messagelist {
 ul.messagelist li {
     display: block;
     font-weight: 400;
-<<<<<<< HEAD
-    font-size: 13px;
-=======
     font-size: 0.8125rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     padding: 10px 10px 10px 65px;
     margin: 0 0 10px 0;
     background: var(--message-success-bg) url(../img/icon-yes.svg) 40px 12px no-repeat;
     background-size: 16px auto;
     color: var(--body-fg);
-<<<<<<< HEAD
-=======
     word-break: break-word;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 }
 
 ul.messagelist li.warning {
@@ -864,11 +645,7 @@ ul.messagelist li.error {
 }
 
 .errornote {
-<<<<<<< HEAD
-    font-size: 14px;
-=======
     font-size: 0.875rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     font-weight: 700;
     display: block;
     padding: 10px 12px;
@@ -889,11 +666,7 @@ ul.errorlist {
 }
 
 ul.errorlist li {
-<<<<<<< HEAD
-    font-size: 13px;
-=======
     font-size: 0.8125rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     display: block;
     margin-bottom: 4px;
     overflow-wrap: break-word;
@@ -934,11 +707,7 @@ td ul.errorlist + input, td ul.errorlist + select, td ul.errorlist + textarea {
 }
 
 .description {
-<<<<<<< HEAD
-    font-size: 12px;
-=======
     font-size: 0.75rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     padding: 5px 0 0 12px;
 }
 
@@ -967,14 +736,11 @@ div.breadcrumbs a:focus, div.breadcrumbs a:hover {
     background: url(../img/icon-viewlink.svg) 0 1px no-repeat;
 }
 
-<<<<<<< HEAD
-=======
 .hidelink {
     padding-left: 16px;
     background: url(../img/icon-hidelink.svg) 0 1px no-repeat;
 }
 
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 .addlink {
     padding-left: 16px;
     background: url(../img/icon-addlink.svg) 0 1px no-repeat;
@@ -1002,11 +768,7 @@ a.deletelink:focus, a.deletelink:hover {
 /* OBJECT TOOLS */
 
 .object-tools {
-<<<<<<< HEAD
-    font-size: 10px;
-=======
     font-size: 0.625rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     font-weight: bold;
     padding-left: 0;
     float: right;
@@ -1018,11 +780,7 @@ a.deletelink:focus, a.deletelink:hover {
     display: block;
     float: left;
     margin-left: 5px;
-<<<<<<< HEAD
-    height: 16px;
-=======
     height: 1rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 }
 
 .object-tools a {
@@ -1036,11 +794,7 @@ a.deletelink:focus, a.deletelink:hover {
     background: var(--object-tools-bg);
     color: var(--object-tools-fg);
     font-weight: 400;
-<<<<<<< HEAD
-    font-size: 11px;
-=======
     font-size: 0.6875rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -1069,16 +823,6 @@ a.deletelink:focus, a.deletelink:hover {
 
 /* OBJECT HISTORY */
 
-<<<<<<< HEAD
-table#change-history {
-    width: 100%;
-}
-
-table#change-history tbody th {
-    width: 16em;
-}
-
-=======
 #change-history table {
     width: 100%;
 }
@@ -1094,7 +838,6 @@ table#change-history tbody th {
     overflow: hidden;
 }
 
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 /* PAGE STRUCTURE */
 
 #container {
@@ -1107,13 +850,6 @@ table#change-history tbody th {
     height: 100%;
 }
 
-<<<<<<< HEAD
-#container > div {
-    flex-shrink: 0;
-}
-
-=======
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 #container > .main {
     display: flex;
     flex: 1 0 auto;
@@ -1124,8 +860,6 @@ table#change-history tbody th {
     max-width: 100%;
 }
 
-<<<<<<< HEAD
-=======
 .skip-to-content-link {
     position: absolute;
     top: -999px;
@@ -1140,7 +874,6 @@ table#change-history tbody th {
     top: 0px;
 }
 
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 #content {
     padding: 20px 40px;
 }
@@ -1161,16 +894,10 @@ table#change-history tbody th {
     margin-right: -300px;
 }
 
-<<<<<<< HEAD
-#footer {
-    clear: both;
-    padding: 10px;
-=======
 @media (forced-colors: active) {
   #content-related {
       border: 1px solid;
   }
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 }
 
 /* COLUMN TYPES */
@@ -1208,16 +935,9 @@ table#change-history tbody th {
     padding: 10px 40px;
     background: var(--header-bg);
     color: var(--header-color);
-<<<<<<< HEAD
-    overflow: hidden;
-}
-
-#header a:link, #header a:visited {
-=======
 }
 
 #header a:link, #header a:visited, #logout-form button {
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     color: var(--header-link-color);
 }
 
@@ -1225,21 +945,6 @@ table#change-history tbody th {
     text-decoration: underline;
 }
 
-<<<<<<< HEAD
-#branding {
-    float: left;
-}
-
-#branding h1 {
-    padding: 0;
-    margin: 0 20px 0 0;
-    font-weight: 300;
-    font-size: 24px;
-    color: var(--accent);
-}
-
-#branding h1, #branding h1 a:link, #branding h1 a:visited {
-=======
 @media (forced-colors: active) {
   #header {
       border-bottom: 1px solid;
@@ -1260,17 +965,12 @@ table#change-history tbody th {
 }
 
 #site-name a:link, #site-name a:visited {
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     color: var(--accent);
 }
 
 #branding h2 {
     padding: 0 10px;
-<<<<<<< HEAD
-    font-size: 14px;
-=======
     font-size: 0.875rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     margin: -8px 0 8px 0;
     font-weight: normal;
     color: var(--header-color);
@@ -1280,27 +980,6 @@ table#change-history tbody th {
     text-decoration: none;
 }
 
-<<<<<<< HEAD
-#user-tools {
-    float: right;
-    padding: 0;
-    margin: 0 0 0 20px;
-    font-weight: 300;
-    font-size: 11px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    text-align: right;
-}
-
-#user-tools a {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-}
-
-#user-tools a:focus, #user-tools a:hover {
-    text-decoration: none;
-    border-bottom-color: var(--primary);
-    color: var(--primary);
-=======
 #logout-form {
     display: inline;
 }
@@ -1338,7 +1017,6 @@ table#change-history tbody th {
 
 #logout-form button:active, #logout-form button:hover {
     margin-bottom: 1px;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 }
 
 /* SIDEBAR */
@@ -1358,11 +1036,7 @@ table#change-history tbody th {
 }
 
 #content-related h4 {
-<<<<<<< HEAD
-    font-size: 13px;
-=======
     font-size: 0.8125rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 }
 
 #content-related p {
@@ -1386,11 +1060,7 @@ table#change-history tbody th {
     padding: 16px;
     margin-bottom: 16px;
     border-bottom: 1px solid var(--hairline-color);
-<<<<<<< HEAD
-    font-size: 18px;
-=======
     font-size: 1.125rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     color: var(--body-fg);
 }
 
@@ -1410,13 +1080,8 @@ table#change-history tbody th {
 .delete-confirmation form .cancel-link {
     display: inline-block;
     vertical-align: middle;
-<<<<<<< HEAD
-    height: 15px;
-    line-height: 15px;
-=======
     height: 0.9375rem;
     line-height: 0.9375rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     border-radius: 4px;
     padding: 10px 15px;
     color: var(--button-fg);
@@ -1442,8 +1107,6 @@ table#change-history tbody th {
 .popup #header {
     padding: 10px 20px;
 }
-<<<<<<< HEAD
-=======
 
 /* PAGINATOR */
 
@@ -1514,4 +1177,3 @@ table#change-history tbody th {
     color: var(--body-fg);
     background-color: var(--body-bg);
 }
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3

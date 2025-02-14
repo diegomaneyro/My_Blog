@@ -1,25 +1,20 @@
 from pathlib import Path
-import environ
+from decouple import Config, RepositoryEnv
 
-# Inicializa la configuración del entorno
-env = environ.Env(
-    DEBUG=(bool, False)
-)
+# Inicializa la configuración con la ruta del archivo .env
+config = Config(RepositoryEnv('.env'))
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-# Lee el archivo .env
-environ.Env.read_env(BASE_DIR / '.env')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env('DEBUG')
+DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = []
 
@@ -35,6 +30,8 @@ INSTALLED_APPS = [
     'manage_post',
     'user',
     'django_extensions',
+    'django_cleanup.apps.CleanupConfig',
+
 ]
 
 MIDDLEWARE = [
@@ -70,7 +67,7 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASE_NAME =  env('DATABASE_NAME')
+DATABASE_NAME =  config('DATABASE_NAME')
 
 DATABASES = {
     'default': {
@@ -114,20 +111,21 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
+# Manejo de archivos estaticos de cada app
 STATICFILES_DIR = [
     'Apps/manage_post/static',
     'Apps/user/static',
 ]
 
-# Ubicacaion de los archivos estaticos
+# Ubicacion de los archivos estaticos
 STATIC_ROOT = BASE_DIR / 'static'
 
 # url publica para los archivos media
 MEDIA_URL = "/media/"
 
-# ubicacaio de los archivos media
+# ubicacion de los archivos media
 MEDIA_ROOT = BASE_DIR / 'media'
 
 

@@ -84,30 +84,18 @@
 
 #toolbar form input {
     border-radius: 4px;
-<<<<<<< HEAD
-    font-size: 14px;
-=======
     font-size: 0.875rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     padding: 5px;
     color: var(--body-fg);
 }
 
 #toolbar #searchbar {
-<<<<<<< HEAD
-    height: 19px;
-=======
     height: 1.1875rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     border: 1px solid var(--border-color);
     padding: 2px 5px;
     margin: 0;
     vertical-align: top;
-<<<<<<< HEAD
-    font-size: 13px;
-=======
     font-size: 0.8125rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     max-width: 100%;
 }
 
@@ -117,11 +105,7 @@
 
 #toolbar form input[type="submit"] {
     border: 1px solid var(--border-color);
-<<<<<<< HEAD
-    font-size: 13px;
-=======
     font-size: 0.8125rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     padding: 4px 8px;
     margin: 0;
     vertical-align: middle;
@@ -141,13 +125,10 @@
     margin-right: 4px;
 }
 
-<<<<<<< HEAD
-=======
 #changelist-search .help {
     word-break: break-word;
 }
 
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 /* FILTER COLUMN */
 
 #changelist-filter {
@@ -158,10 +139,6 @@
     margin: 0 0 0 30px;
 }
 
-<<<<<<< HEAD
-#changelist-filter h2 {
-    font-size: 14px;
-=======
 @media (forced-colors: active) {
   #changelist-filter {
       border: 1px solid;
@@ -170,7 +147,6 @@
 
 #changelist-filter h2 {
     font-size: 0.875rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     text-transform: uppercase;
     letter-spacing: 0.5px;
     padding: 5px 15px;
@@ -178,19 +154,13 @@
     border-bottom: none;
 }
 
-<<<<<<< HEAD
-#changelist-filter h3 {
-=======
 #changelist-filter h3,
 #changelist-filter details summary {
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     font-weight: 400;
     padding: 0 15px;
     margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
-=======
 #changelist-filter details summary > * {
     display: inline;
 }
@@ -213,7 +183,6 @@
     content: '↓';
 }
 
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 #changelist-filter ul {
     margin: 5px 0;
     padding: 0 15px 15px;
@@ -233,12 +202,7 @@
 #changelist-filter a {
     display: block;
     color: var(--body-quiet-color);
-<<<<<<< HEAD
-    text-overflow: ellipsis;
-    overflow-x: hidden;
-=======
     word-break: break-word;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 }
 
 #changelist-filter li.selected {
@@ -257,92 +221,14 @@
     color: var(--link-hover-color);
 }
 
-<<<<<<< HEAD
-#changelist-filter #changelist-filter-clear a {
-    font-size: 13px;
-    padding-bottom: 10px;
-=======
 #changelist-filter #changelist-filter-extra-actions {
     font-size: 0.8125rem;
     margin-bottom: 10px;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     border-bottom: 1px solid var(--hairline-color);
 }
 
 /* DATE DRILLDOWN */
 
-<<<<<<< HEAD
-.change-list ul.toplinks {
-    display: block;
-    float: left;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
-
-.change-list ul.toplinks li {
-    padding: 3px 6px;
-    font-weight: bold;
-    list-style-type: none;
-    display: inline-block;
-}
-
-.change-list ul.toplinks .date-back a {
-    color: var(--body-quiet-color);
-}
-
-.change-list ul.toplinks .date-back a:focus,
-.change-list ul.toplinks .date-back a:hover {
-    color: var(--link-hover-color);
-}
-
-/* PAGINATOR */
-
-.paginator {
-    font-size: 13px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    line-height: 22px;
-    margin: 0;
-    border-top: 1px solid var(--hairline-color);
-    width: 100%;
-}
-
-.paginator a:link, .paginator a:visited {
-    padding: 2px 6px;
-    background: var(--button-bg);
-    text-decoration: none;
-    color: var(--button-fg);
-}
-
-.paginator a.showall {
-    border: none;
-    background: none;
-    color: var(--link-fg);
-}
-
-.paginator a.showall:focus, .paginator a.showall:hover {
-    background: none;
-    color: var(--link-hover-color);
-}
-
-.paginator .end {
-    margin-right: 6px;
-}
-
-.paginator .this-page {
-    padding: 2px 6px;
-    font-weight: bold;
-    font-size: 13px;
-    vertical-align: top;
-}
-
-.paginator a:focus, .paginator a:hover {
-    color: white;
-    background: var(--link-hover-color);
-}
-
-=======
 .change-list .toplinks {
     display: flex;
     padding-bottom: 5px;
@@ -364,7 +250,6 @@
     color: var(--link-hover-color);
 }
 
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 /* ACTIONS */
 
 .filtered .actions {
@@ -376,12 +261,6 @@
     vertical-align: baseline;
 }
 
-<<<<<<< HEAD
-#changelist table tbody tr.selected {
-    background-color: var(--selected-row);
-}
-
-=======
 /* Once the :has() pseudo-class is supported by all browsers, the tr.selected
    selector and the JS adding the class can be removed. */
 #changelist tbody tr.selected {
@@ -401,39 +280,21 @@
     }
 }
 
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 #changelist .actions {
     padding: 10px;
     background: var(--body-bg);
     border-top: none;
     border-bottom: none;
-<<<<<<< HEAD
-    line-height: 24px;
-=======
     line-height: 1.5rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     color: var(--body-quiet-color);
     width: 100%;
 }
 
-<<<<<<< HEAD
-#changelist .actions.selected { /* XXX Probably unused? */
-    background: var(--body-bg);
-    border-top: 1px solid var(--body-bg);
-    border-bottom: 1px solid #edecd6;
-}
-
-=======
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
 #changelist .actions span.all,
 #changelist .actions span.action-counter,
 #changelist .actions span.clear,
 #changelist .actions span.question {
-<<<<<<< HEAD
-    font-size: 13px;
-=======
     font-size: 0.8125rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     margin: 0 0.5em;
 }
 
@@ -443,19 +304,11 @@
 
 #changelist .actions select {
     vertical-align: top;
-<<<<<<< HEAD
-    height: 24px;
-    color: var(--body-fg);
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-    font-size: 14px;
-=======
     height: 1.5rem;
     color: var(--body-fg);
     border: 1px solid var(--border-color);
     border-radius: 4px;
     font-size: 0.875rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     padding: 0 0 0 4px;
     margin: 0;
     margin-left: 10px;
@@ -468,29 +321,17 @@
 #changelist .actions label {
     display: inline-block;
     vertical-align: middle;
-<<<<<<< HEAD
-    font-size: 13px;
-}
-
-#changelist .actions .button {
-    font-size: 13px;
-=======
     font-size: 0.8125rem;
 }
 
 #changelist .actions .button {
     font-size: 0.8125rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     border: 1px solid var(--border-color);
     border-radius: 4px;
     background: var(--body-bg);
     box-shadow: 0 -15px 20px -10px rgba(0, 0, 0, 0.15) inset;
     cursor: pointer;
-<<<<<<< HEAD
-    height: 24px;
-=======
     height: 1.5rem;
->>>>>>> 6ca27a9fcd0ef3685c7e9f2efa01fe8b304e9fb3
     line-height: 1;
     padding: 4px 8px;
     margin: 0;
