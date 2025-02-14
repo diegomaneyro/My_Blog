@@ -24,6 +24,7 @@ class SignUpForm(UserCreationForm):
                                widget=forms.PasswordInput(attrs={'placeholder':'Confirmar contraseña'}))
 
     class Meta:
+        # metadatos
         model = User
         fields = [
             'username',

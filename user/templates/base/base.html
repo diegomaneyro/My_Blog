@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Mi Proyecto{% endblock %}</title>
+    <!-- Cargar archivos estáticos -->
+    {% load static %} {% block %}
+    <link rel="stylesheet" href="{% static 'base/css/footer.css' %}" type='text/css' />
+    <link rel="stylesheet" href="{% static 'base/css/general.css' %}" type='text/css' />
+    <link rel="stylesheet" href="{% static 'base/css/menu.css' %}" type='text/css' />
+    {% endblock css %} {% endblock %}
+  </head>
+  <body>
+    <main>{% block content %}{% endblock %}</main>
+  </body>
+</html>
