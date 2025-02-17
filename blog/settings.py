@@ -114,7 +114,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Manejo de archivos estaticos de cada app
-STATICFILES_DIR = [
+STATICFILES_DIRS = [
     'Apps/manage_post/static',
     'Apps/user/static',
 ]
@@ -135,5 +135,5 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # redireccionamiento de url
-LOGIN_REDIRECT_URL = 'index'
-LOGOUT_REDIRECT_URL = 'login'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = 'user/login'
